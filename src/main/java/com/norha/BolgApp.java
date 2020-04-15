@@ -11,3 +11,38 @@ public class BolgApp {
 	}
 
 }
+
+
+/******************************************************************************
+Web Service
+******************************************************************************
+A service on Web, for machine consumption
+A web service can have multiple micro services
+Other Application will use your web services
+If web service has structural change other services may crash
+Rules are importent
+
+
+Structure : Posts Services
+Blog App
+
+
+Resourse ------> Posts 
+
+					View all
+					View specific
+					Add
+					Update
+					Delete
+					
+	Posts
+	
+operations 		Method			Url Pattren
+
+View all		Get				/posts
+View specific 	Get				/posts/id
+Add				Post			/posts
+Update			Put				/posts
+Delete 			Delete			/posts
+****************************************************************************
+****************************************************************************/
