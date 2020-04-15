@@ -46,3 +46,19 @@ Update			Put				/posts
 Delete 			Delete			/posts
 ****************************************************************************
 ****************************************************************************/
+/******************************************************************************
+Multiple ways to create maven project
+******************************************************************************
+
+POM File Explained
+
+1 we have 2 trees --> Parant and dependancies. 
+
+2 in parent version will determines the versions of the dependancy packages.
+
+3 when we use the spring stater project internaly make use of 
+spring project intializer amother project from spring team.
+****************************************************************************
+****************************************************************************/
+
+
