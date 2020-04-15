@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class S04L01SettingUpRestfulWebAppApplication {
+public class BolgApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(S04L01SettingUpRestfulWebAppApplication.class, args);
+		SpringApplication.run(BolgApp.class, args);
 	}
 
 }
