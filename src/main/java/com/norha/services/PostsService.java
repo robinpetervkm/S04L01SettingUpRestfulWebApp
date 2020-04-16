@@ -49,4 +49,14 @@ public class PostsService {
 		}
 	}
 
+	public void deletePost(int id) {
+		for (Iterator iterator = posts.iterator(); iterator.hasNext();) {
+			Post post1 = (Post) iterator.next();
+			if(post1.getPostId()==id) {
+				posts.remove(posts.indexOf(post1));
+				return;
+			}
+		}
+	}
+
 }
