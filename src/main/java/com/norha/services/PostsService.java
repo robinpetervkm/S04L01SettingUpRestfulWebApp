@@ -10,7 +10,7 @@ import com.norha.entity.Post;
 
 @Service
 public class PostsService {
-	List<Post> posts = new ArrayList<>(
+	static List<Post> posts = new ArrayList<>(
 			Arrays.asList(
 					new Post(1, "DataType", "Sample Text1"),
 					new Post(2, "Classes", "Sample Text2"),
