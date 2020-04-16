@@ -1,12 +1,24 @@
 package com.norha.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  * @author tinup
  *
  */
+@Entity
+@Table(name = "posts")
 public class Post {
+	
+	@Id
+	@Column(name = "id")
 	int postId;
+	@Column(name = "title")
 	String title;
+	@Column(name = "body")
 	String body;
 	
 	public Post() {
