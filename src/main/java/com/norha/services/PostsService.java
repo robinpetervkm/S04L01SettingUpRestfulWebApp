@@ -2,6 +2,7 @@ package com.norha.services;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -36,6 +37,16 @@ public class PostsService {
 
 	public void addPost(Post post) {
 		posts.add(post);
+	}
+
+	public void updatePost(Post post, int id) {
+		for (Iterator iterator = posts.iterator(); iterator.hasNext();) {
+			Post post1 = (Post) iterator.next();
+			if(post1.getPostId()==id) {
+				posts.set(posts.indexOf(post1), post);
+				return;
+			}
+		}
 	}
 
 }
