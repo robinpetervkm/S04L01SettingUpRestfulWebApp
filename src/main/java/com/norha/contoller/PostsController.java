@@ -1,9 +1,10 @@
 package com.norha.contoller;
 
 
-import java.util.ArrayList;
 import java.util.List;
 
+
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,5 +18,9 @@ public class PostsController {
 		return new PostsService().getPosts();
  	}
 	
+	@RequestMapping("/posts/{id}")
+	public Post getPost(@PathVariable("id") int id) {
+		return new PostsService().getPost(id);
+	}
 
 }

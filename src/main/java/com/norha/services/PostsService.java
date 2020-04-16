@@ -24,4 +24,13 @@ public class PostsService {
 		return posts;
 	}
 
+	public Post getPost(int id) {
+		for (Post post : posts) {
+			if(post.getPostId()==id) {
+				return post;
+			}
+		}
+		return null;
+	}
+
 }
