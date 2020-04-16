@@ -33,4 +33,8 @@ public class PostsService {
 		return null;
 	}
 
+	public void addPost(Post post) {
+		posts.add(post);
+	}
+
 }
